@@ -60,9 +60,9 @@ export default class Trader {
     const gaps = await this.fetchGaps()
     const maxGap = _.max(gaps, _.property('gap'))
     // average transaction time is 12.5 mins
-    await sleep(100000)
+    await sleep(5000)
     const currentGap = await this.fetchGap(maxGap.seller, maxGap.buyer)
-    this.cash += currentGap.gap
+    this.cash += currentGap.gap * this.coin
     console.log(`Sell coin ${currentGap.seller}, Buy coin from ${currentGap.buyer}, Actual Gain ${currentGap.gap}, Expected Gain ${maxGap.gap}, current cash ${this.cash}`)
   }
 

@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "babel-node src/app.js",
     "compile": "babel src --out-dir .compiled --source-maps inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
