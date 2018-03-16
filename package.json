@@ -14,13 +14,7 @@
     "babel-core": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "ccxt": "^1.11.104"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ],
-    "sourceMap": true,
-    "retainLines": true
+    "ccxt": "^1.11.104",
+    "underscore": "^1.8.3"
   }
 }

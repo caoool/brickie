@@ -11,7 +11,8 @@
       "program": "${workspaceRoot}/src/app.js",
       "outFiles": [ "${workspaceRoot}/.compiled/**/*.js" ],
       "preLaunchTask": "npm: compile",
-      "smartStep": true
+      "smartStep": true,
+      "sourceMaps": true
     },
   ]
 }
